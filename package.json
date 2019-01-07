@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "run:lambda": "NODE_ENV=development netlify-lambda serve ./server -c ./config/webpack.config.js",
-    "build:lambda": "NODE_ENV=production netlify-lambda build ./server -c ./config/webpack.config.js"
+    "build:lambda": "echo \"prebuilt\"",
+    "build:lambda_old": "NODE_ENV=production netlify-lambda build ./server -c ./config/webpack.config.js"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.6.0",
